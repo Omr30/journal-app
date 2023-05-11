@@ -1,5 +1,6 @@
 import { SaveOutlined } from "@mui/icons-material"
 import { Button, Grid, TextField, Typography } from "@mui/material"
+import { ImageGallery } from "../components"
 
 export const NoteView = () => {
   return (
@@ -30,7 +31,18 @@ export const NoteView = () => {
           label="Titulo"
           sx={{ border: "none", mb: 1 }}
         />
+
+        <TextField
+          type="text"
+          variant="filled"
+          fullWidth
+          multiline
+          placeholder="¿Qué sucedió el día de hoy?"
+          minRows={5}
+        />
       </Grid>
+      {/* Image gallery */}
+      <ImageGallery />
     </Grid>
   )
 }
